@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ctrl + cmd</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <div class="logo">ctrl + cmd</div>
+            <ul class="header-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#info">Products</a></li>
+                <li><a href="#" class="open-cart">Cart &#x1F6D2</a></li>
+            </ul>
+        </div>
+        <div class="header">   
+            <div class="h-1 slide-1 fade">
+                <div class="h-2">
+                    <div class="title">Always premium.</div>
+                    <div class="description">Best Apple outlet store for the Best People.</div>
+                    <a href="#info" class="shop">Shop now</a>
+                </div>
+            <div class="header-image"><img src="./images/main-logo.png"></div>
+            </div>
+
+
+            <div class="h-1 slide-1 fade">
+                <div class="h-2">
+                    <div class="title">Get the all new iPhone 14</div>
+                    <div class="description">Order the latest iPhone 14 variants.</div>
+                    <a href="#info" class="shop">Shop now</a>
+                </div>
+            <div class="header-image"><img src="./images/iphone14-3.png"></div>
+            </div>
+
+            <div class="h-1 slide-1 fade">
+                <div class="h-2">
+                    <div class="title">Can't go wrong with Pro</div>
+                    <div class="description">Order the latest iPhone 14 Pro.</div>
+                    <a href="#info" class="shop">Shop now</a>
+                </div>
+            <div class="header-image"><img src="./images/iphone14-pro-4.png"></div>
+            </div>
+
+            <div class="h-1 slide-1 fade">
+                <div class="h-2">
+                    <div class="title">Go big with Pro Max</div>
+                    <div class="description">Order the latest iPhone 14 Pro Max.</div>
+                    <a href="#info" class="shop">Shop now</a>
+                </div>
+            <div class="header-image"><img src="./images/iphone14-pro.png"></div>
+            </div>
+
+            <div class="h-1 slide-1 fade">
+                <div class="h-2">
+                    <div class="title">Powerful with M2 Air</div>
+                    <div class="description">Order the latest Macbook Air 2022.</div>
+                    <a href="#info" class="shop">Shop now</a>
+                </div>
+            <div class="header-image"><img src="./images/macbook-air-2.png"></div>
+            </div>
+
+            <div class="h-1 slide-1 fade">
+                <div class="h-2">
+                    <div class="title">Best work with M2 Pro</div>
+                    <div class="description">All new Macbook Pro 2022.</div>
+                    <a href="#info" class="shop">Shop now</a>
+                </div>
+            <div class="header-image"><img src="./images/macbook-pro.png"></div>
+            </div>
+
+            <div class="h-1 slide-1 fade">
+                <div class="h-2">
+                    <div class="title">Best people on the go</div>
+                    <div class="description">Get the iPad Pro (5th Gen).</div>
+                    <a href="#info" class="shop">Shop now</a>
+                </div>
+            <div class="header-image"><img src="./images/ipad-pro-2.png"></div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+              </div>
+        </div>
+
+
+        <div class="info" id="info">
+            <div class="info-title">Products</div>
+            <div class="info-container" id="infoContainer"></div>   
+        </div>
+        
+
+        <section class="modal hidden">
+            <div class="cart-top">
+                <img src="./images/cart-icon.png" 
+                alt="cart icon" width="50px" height="50px">
+                <button class="btn-close">X</button>
+            </div>
+            
+            <div class="my-cart">
+                <h3>My Cart</h3>
+                <p id="count-items">0 items</p>
+                <ul class="order" id="order">
+                    <!-- ordered items here -->
+                </ul>
+            </div>
+    
+            <button class="btn-check-out">Checkout</button>
+        </section>
+        <div class="overlay hidden"></div>
+
+
+        <div class="footer">Copyright © FED 2022 Basic Assessment</div>
+    <script src="./js/products.js"></script>
+    <script src="./js/slideshow.js"></script>
+    </body>
+</html>
